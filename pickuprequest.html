@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pickup Request - Bhagwati International</title>
+  <meta name="description" content="Schedule a cargo or parcel pickup from your home or office in Surat. Complete our pickup form and confirm booking slots instantly on WhatsApp.">
+  <link rel="shortcut icon" href="assets//images/bhagavti_logo.jpg" type="image/x-icon">
+  
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 1. Header Top Info Bar -->
+  <div class="header-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="social-links">
+          <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.bhagwatiintl.in" class="me-3"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+        <div class="contact-info d-none d-md-block">
+          <span class="me-4"><i class="fas fa-phone-alt me-2"></i><a href="tel:+919727533302">+91 97275 33302</a> / <a href="tel:+919727666799">+91 97276 66799</a></span>
+          <span><i class="fas fa-envelope me-2"></i><a href="mailto:support@bhagwatiintl.com">support@bhagwatiintl.com</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light main-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand py-2" href="index.html">
+        <img src="assets//images/bhagavti_logo.jpg" height="80" alt="Bhagwati International Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="prohibited.html">Prohibited Items</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pickuprequest.html">Pickup Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary nav-cta" href="pickuprequest.html">Book Pickup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner Section -->
+  <section class="position-relative bg-dark text-white py-5" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.bhagwatiintl.in/images/banner/pickuprequest.png'); background-size: cover; background-position: center; height: 260px;">
+    <div class="container h-100 d-flex align-items-center">
+      <div>
+        <span class="badge bg-primary px-3 py-2 text-uppercase mb-2">Book Courier</span>
+        <h1 class="display-5 font-weight-bold text-white mb-0">Schedule Doorstep Pickup</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Grid Content -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Left Column: Form -->
+        <div class="col-lg-9">
+          <div class="pe-lg-4">
+            
+            <div class="section-title-wrapper mb-4">
+              <span class="section-subtitle">Hassle-Free Booking</span>
+              <h2 class="section-title">Pickup Scheduling Request</h2>
+              <p class="text-muted mt-3">Ready to ship? Fill out the form details below to alert our distribution agents. Once submitted, we will draft a WhatsApp receipt. Confirm your convenient scheduling time directly on WhatsApp chat.</p>
+            </div>
+
+            <!-- Form Card -->
+            <div class="card border p-4 shadow-sm">
+              <form id="pickup-form" class="row g-3">
+                
+                <div class="col-md-6">
+                  <label for="pickup-name" class="form-label font-weight-bold">Requester Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control py-2 border-2" id="pickup-name" required placeholder="Enter full name">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="pickup-mobile" class="form-label font-weight-bold">Requester Mobile No <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control py-2 border-2" id="pickup-mobile" required placeholder="Enter mobile number">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="pickup-city" class="form-label font-weight-bold">Pickup City <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control py-2 border-2" id="pickup-city" required placeholder="e.g. Surat, Bardoli, Vyara">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="pickup-weight" class="form-label font-weight-bold">Estimated Package Weight (kg)</label>
+                  <input type="number" class="form-control py-2 border-2" id="pickup-weight" min="0.1" step="0.1" placeholder="e.g. 5.5">
+                </div>
+
+                <div class="col-12">
+                  <label for="pickup-address" class="form-label font-weight-bold">Pickup Address & Landmarks <span class="text-danger">*</span></label>
+                  <textarea class="form-control py-2 border-2" id="pickup-address" rows="3" required placeholder="Enter complete home or office address"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <label for="pickup-email" class="form-label font-weight-bold">Requester E-Mail</label>
+                  <input type="email" class="form-control py-2 border-2" id="pickup-email" placeholder="Enter your email (optional)">
+                </div>
+
+                <div class="col-12 mt-4 text-end">
+                  <button type="submit" class="btn btn-primary btn-lg px-5"><i class="fab fa-whatsapp me-2"></i> Submit & Send Request</button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- Right Column: Sidebars -->
+        <div class="col-lg-3">
+          
+          <!-- Widget: Tracker -->
+          <div class="widget-card">
+            <h4 class="widget-title">Quick Tracking</h4>
+            <form id="sidebar-tracking-form">
+              <div class="mb-3">
+                <input type="text" name="awb" class="form-control" placeholder="AWB tracking number" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Track Parcel</button>
+            </form>
+          </div>
+          
+          <!-- Widget: Fuel Surcharge -->
+          <div class="widget-card">
+            <h4 class="widget-title">Fuel Surcharge</h4>
+            <div class="ticker-container">
+              <div class="ticker-list">
+                <div class="ticker-item"><span>DHL</span><span class="ticker-badge">23.75%</span></div>
+                <div class="ticker-item"><span>FEDEX</span><span class="ticker-badge fedex">21.50%</span></div>
+                <div class="ticker-item"><span>UPS</span><span class="ticker-badge ups">24.00%</span></div>
+                <div class="ticker-item"><span>TNT</span><span class="ticker-badge">20.05%</span></div>
+                <div class="ticker-item"><span>ARAMEX</span><span class="ticker-badge aramex">26.00%</span></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://api.whatsapp.com/send?phone=919727533302&text=Hello%20Bhagwati%20International,%20I%20have%20an%20inquiry%20regarding%20shipping%20rates." class="whatsapp-floating" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container position-relative">
+      <div class="row g-5 footer-cols">
+        <div class="col-lg-3 col-md-6">
+          <img src="assets//images/bhagavti_logo.jpg" class="mb-3 bg-white p-2 rounded footer-logo" height="80" alt="Bhagwati Logo">
+          <p class="small footer-about">We are Surat's premier international courier service. Delivering reliability, speed, and corporate grade safety with 20+ years of logistics experience.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Useful Links</h4>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="index.html"><i class="fas fa-angle-right me-1"></i> Home</a></li>
+            <li class="mb-2"><a href="aboutus.html"><i class="fas fa-angle-right me-1"></i> About Us</a></li>
+            <li class="mb-2"><a href="prohibited.html"><i class="fas fa-angle-right me-1"></i> Prohibited Items</a></li>
+            <li class="mb-2"><a href="pickuprequest.html"><i class="fas fa-angle-right me-1"></i> Pickup Request</a></li>
+            <li class="mb-2"><a href="contactus.html"><i class="fas fa-angle-right me-1"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="services.html"><i class="fas fa-angle-right me-1"></i> Air Shipping</a></li>
+            <li class="mb-2"><a href="services.html"><i class="fas fa-angle-right me-1"></i> Sea Shipping</a></li>
+            <li class="mb-2"><a href="services.html"><i class="fas fa-angle-right me-1"></i> International Courier</a></li>
+            <li class="mb-2"><a href="services.html"><i class="fas fa-angle-right me-1"></i> E-commerce Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="small mb-0">Shop No: 6, Maheshwari Apartment, Nanpura, Surat, Gujarat, India - 395001</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p class="small mb-0"><a href="tel:+919727533302">+91 9727533302</a> / <a href="tel:+919727666799">+91 9727666799</a></p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <p class="small mb-0"><a href="mailto:support@bhagwatiintl.com">support@bhagwatiintl.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
+        <p class="mb-0">&copy; 2026 BHAGWATI INTERNATIONAL — ALL RIGHTS RESERVED</p>
+        <div class="footer-legal">
+          <a href="#">Payment Terms &amp; Conditions</a>
+          <span>|</span>
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Avoid Fraud &amp; Scams</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
