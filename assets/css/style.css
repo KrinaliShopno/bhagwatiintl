@@ -234,7 +234,7 @@ a { text-decoration: none; transition: var(--transition-smooth); }
   box-shadow: var(--shadow-md);
 }
 .navbar-brand img { transition: var(--transition-smooth); }
-.main-nav.navbar-scrolled .navbar-brand img { height: 40px; }
+.main-nav.navbar-scrolled .navbar-brand img { height: 100px; }
 
 .navbar-nav .nav-link {
   font-family: var(--font-display);
@@ -335,7 +335,7 @@ a { text-decoration: none; transition: var(--transition-smooth); }
 /* ---- Poster frame (the shipped-artwork showcase) ---- */
 .poster-frame {
   position: relative;
-  max-width: 420px;
+  max-width: 550px;
   margin: 0 auto;
   background: #fff;
   border-radius: 20px;
@@ -910,89 +910,138 @@ a { text-decoration: none; transition: var(--transition-smooth); }
    Footer
    ========================================================== */
 footer {
-  background-color: var(--color-ink);
-  color: rgba(255, 255, 255, 0.62);
+  background-color: #fff;
+  color: var(--color-ink);
   font-size: 0.92rem;
   position: relative;
   padding: 90px 0 0;
   border-top: 3px solid var(--color-primary);
 }
 
-footer h4 { color: #fff; font-weight: 700; margin-bottom: 20px; font-size: 1.02rem; }
-footer a { color: var(--color-paper); }
+footer h4 { color: var(--color-ink); font-weight: 700; margin-bottom: 20px; font-size: 1.02rem; }
+footer a { color: var(--color-ink); text-decoration: none; }
 footer a:hover { color: var(--color-primary); }
 footer i { color: var(--color-primary); }
-footer .footer-links a { display: inline-block; transition: var(--transition-smooth); font-size:15px; color:var(--color-paper); }
-footer .footer-links a:hover { transform: translateX(3px); }
-footer .footer-links i { font-size: 0.8rem; }
-.footer-bottom p{
-  color:var(--color-paper)
+.footer-social a:hover i { color: var(--color-white); }
+footer .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-smooth);
+  font-size: 16px;
+  color: var(--color-ink);
 }
-footer .footer-cols { position: relative; z-index: 1; margin-top:10px }
+footer .footer-links a:hover { transform: translateX(4px); color: var(--color-primary); }
+footer .footer-links i { font-size: 0.75rem; }
 
-.footer-logo { display: block; }
-.footer-about { max-width: 300px; line-height: 1.7; margin-top: 6px; margin-bottom: 20px; font-size:15px; color:var(--color-paper)}
-.footer-readmore { padding: 0.55rem 1.4rem; font-size: 0.82rem; }
+.footer-bottom p { color: var(--color-ink); opacity: 0.65; font-size: 16px; }
+
+footer .footer-cols { position: relative; z-index: 1; margin-top: 10px; }
+
+.footer-logo {
+  display: block;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.footer-about {
+  max-width: 300px;
+  line-height: 1.7;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: var(--color-ink);
+  opacity: 0.85;
+}
 
 .footer-heading {
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 17px !important;
+  letter-spacing: 0.06em;
+  font-size: 15px !important;
+  position: relative;
+  padding-bottom: 12px;
+}
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--color-primary);
 }
 
 .footer-contact-item {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 14px;
+  margin-bottom: 18px;
 }
 .footer-contact-item:last-child { margin-bottom: 0; }
-.footer-contact-item p { color: var(--color-paper); line-height: 1.55; font-size:16px }
-.footer-contact-item i { margin-top: 3px; width: 16px; text-align: center; flex-shrink: 0; }
+.footer-contact-item p { color: var(--color-ink); line-height: 1.55; font-size: 16px; margin: 0; }
+
+.footer-icon-badge {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(var(--color-primary-rgb, 220, 38, 38), 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon-badge i { margin: 0; color: var(--color-primary); font-size: 0.85rem; }
 
 .footer-whatsapp-link {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   margin-top: 18px;
+  padding: 8px 16px;
+  border-radius: 30px;
   font-weight: 600;
-  color: var(--color-accent-green);
+  font-size: 14px;
+  color: #fff;
+  background: var(--color-accent-green, #25D366);
+  transition: var(--transition-smooth);
 }
-.footer-whatsapp-link i { color: var(--color-accent-green); }
-.footer-whatsapp-link:hover { color: #fff; }
-.footer-whatsapp-link:hover i { color: #fff; }
+.footer-whatsapp-link:hover { filter: brightness(0.92); color: #fff; }
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-social a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ink);
+  transition: var(--transition-smooth);
+}
+.footer-social a:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
 
 footer .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 24px 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 22px 0;
   margin-top: 60px;
-  font-family: var(--font-mono);
+  /* font-family: var(--font-mono); */
   font-size: 0.76rem;
   letter-spacing: 0.03em;
 }
-footer .footer-legal a { color: var(--color-paper); }
-footer .footer-legal a:hover { color: var(--color-primary); }
-footer .footer-legal span { color: rgba(255,255,255,0.25); margin: 0 8px; }
+footer .footer-legal a { color: var(--color-ink); opacity: 0.7; font-size:16px;}
+footer .footer-legal a:hover { color: var(--color-primary); opacity: 1; }
+footer .footer-legal span { color: rgba(0,0,0,0.2); margin: 0 8px; }
 
 @media (max-width: 767px) {
   footer { padding-top: 60px; }
-}
-
-/* ==========================================================
-   Responsive
-   ========================================================== */
-@media (max-width: 991px) {
-  .carousel-item { height: 480px; }
-  .carousel-caption h2 { font-size: 2.2rem; }
-  .section-padding { padding: 72px 0; }
-  .section-title { font-size: 2rem; }
-}
-
-@media (max-width: 767px) {
-  .header-top { display: none; }
-  .carousel-item { height: 440px; }
-  .carousel-caption { left: 6%; right: 6%; max-width: 100%; }
-  .carousel-caption h2 { font-size: 1.7rem; margin-bottom: 0.9rem; }
-  .carousel-caption p { font-size: 0.96rem; margin-bottom: 1.4rem; }
-  .tracking-overlay-container { margin-top: 24px; }
-  .stat-number { font-size: 2rem; }
+  .footer-social { justify-content: center; }
 }
