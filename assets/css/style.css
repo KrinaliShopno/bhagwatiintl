@@ -1018,3 +1018,8 @@ footer .footer-legal span { color: rgba(255,255,255,0.2); margin: 0 8px; }
   .footer-brand-row { flex-direction: column; text-align: center; }
   .footer-brand-left { flex-direction: column; }
 }
+
+
+.map-bottom{
+  margin-bottom:80px;
+}
