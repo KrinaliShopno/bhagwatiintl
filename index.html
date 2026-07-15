@@ -59,14 +59,15 @@
     </div>
   </nav>
 
-  <!-- 3. Hero — brand copy left, framed promo-poster carousel right -->
-  <section class="hero-slider-section">
-    <div class="hero-route-bg" aria-hidden="true"></div>
+  <!-- 3. Hero — full-bleed background image with brand copy overlay -->
+  <section class="hero-slider-section hero-bg-section">
+    <div class="hero-bg-media" role="img" aria-label="Bhagwati International courier shipment ready for global delivery"></div>
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
     <div class="container">
-      <div class="row align-items-center hero-row gy-5">
+      <div class="row hero-row">
 
         <!-- Copy -->
-        <div class="col-lg-6 hero-content">
+        <div class="col-lg-7 col-xl-6 hero-content">
           <span class="stamp-badge stamp-badge-light mb-4"><i class="fas fa-stamp"></i> Trusted Since 2006</span>
           <h1>Ship Anything, <span>Anywhere — Fast, Safe </span> &amp; Tracked</h1>
           <p>Bhagwati International moves documents, cargo, household goods and home-cooked snacks from Surat to 220+ countries, door to door.</p>
@@ -78,63 +79,6 @@
             <div class="hero-chip"><strong>20+</strong><span>Years Experience</span></div>
             <div class="hero-chip"><strong>220+</strong><span>Countries Served</span></div>
             <div class="hero-chip"><strong>15,000+</strong><span>Packages Delivered</span></div>
-          </div>
-        </div>
-
-        <!-- Poster carousel -->
-        <div class="col-lg-6">
-          <div class="poster-frame">
-            <span class="poster-tape poster-tape-tl" aria-hidden="true"></span>
-            <span class="poster-tape poster-tape-br" aria-hidden="true"></span>
-            <span class="poster-stamp"><i class="fas fa-paper-plane"></i></span>
-
-            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4200">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-caption="">
-                  <img src="assets/images/banner_7.jpeg" alt="Bhagwati International — best international service provider">
-                </div>
-                <div class="carousel-item" data-caption="">
-                  <img src="assets/images/banner_8.webp" alt="Bhagwati International — best courier service for household items">
-                </div>
-                <div class="carousel-item" data-caption="">
-                  <img src="assets/images/banner_1.jpg" alt="Bhagwati International — best cargo service provider">
-                </div>
-                <div class="carousel-item" data-caption="">
-                  <img src="assets/images/banner_2.jpg" alt="Bhagwati International — international shipping e-commerce solution">
-                </div>
-                <div class="carousel-item" data-caption="">
-                  <img src="assets/images/banner_3.jpg" alt="Bhagwati International — serves with strong commitment">
-                </div>
-                <div class="carousel-item" data-caption="">
-                  <img src="assets/images/banner_5.jpeg" alt="Bhagwati International — international freight service">
-                </div>
-                <div class="carousel-item" data-caption="">
-                  <img src="assets/images/banner_6.jpeg" alt="Bhagwati International — best cargo service provider, service and benefits">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
-            <!-- <div class="poster-caption">
-              <span class="poster-index" id="posterIndex">01 / 07</span>
-              <span class="poster-text" id="posterCaptionText">Homemade food, appliances &amp; stationery — shipped worldwide</span>
-            </div> -->
-            <div class="poster-dots" id="posterDots">
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            </div>
           </div>
         </div>
 
@@ -367,16 +311,32 @@
 
   <!-- 10. Footer -->
 <footer>
+  <div class="footer-top-accent" aria-hidden="true"></div>
   <div class="container position-relative">
+
+    <div class="footer-brand-row">
+      <div class="footer-brand-left">
+        <!-- <img src="assets/images/Bhagvati_Intl_Logo.png" class="footer-logo" height="110" alt="Bhagwati Logo"> -->
+        <div>
+          <h4 class="footer-brand-name">Bhagwati International</h4>
+          <p class="footer-brand-tag">Surat's international courier partner, since 2006</p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+
     <div class="row g-5 footer-cols">
       <div class="col-lg-3 col-md-6">
-        <img src="assets/images/Bhagvati_Intl_Logo.png" class="mb-3 bg-white p-2 rounded footer-logo" height="130" alt="Bhagwati Logo">
+       <div class="footer-brand-left">
+        <img src="assets/images/Bhagvati_Intl_Logo.png" class="footer-logo" height="110" alt="Bhagwati Logo">
+       
+      </div>
         <p class="small footer-about">We are Surat's premier international courier service. Delivering reliability, speed, and corporate grade safety with 20+ years of logistics experience.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
-        </div>
+      
       </div>
 
       <div class="col-lg-2 col-md-6">
@@ -403,10 +363,6 @@
       <div class="col-lg-4 col-md-6">
         <h4 class="footer-heading">Contact Us</h4>
         <div class="footer-contact-item">
-          <span class="footer-icon-badge"><i class="fas fa-map-marker-alt"></i></span>
-          <p class="small mb-0">Shop No: 6, Maheshwari Apartment, Nanpura, Surat, Gujarat, India - 395001</p>
-        </div>
-        <div class="footer-contact-item">
           <span class="footer-icon-badge"><i class="fas fa-phone-alt"></i></span>
           <p class="small mb-0"><a href="tel:+919727533302">+91 9727533302</a> / <a href="tel:+919727666799">+91 9727666799</a></p>
         </div>
@@ -414,13 +370,20 @@
           <span class="footer-icon-badge"><i class="fas fa-envelope"></i></span>
           <p class="small mb-0"><a href="mailto:support@bhagwatiintl.com">support@bhagwatiintl.com</a></p>
         </div>
+         <div class="footer-contact-item">
+          <span class="footer-icon-badge"><i class="fas fa-map-marker-alt"></i></span>
+          <p class="small mb-0">Shop No: 6, Maheshwari Apartment, Nanpura, Surat, Gujarat, India - 395001</p>
+        </div>
         <!-- <a href="https://api.whatsapp.com/send?phone=919727533302" target="_blank" class="footer-whatsapp-link">
           <i class="fab fa-whatsapp"></i> Chat on WhatsApp
         </a> -->
       </div>
     </div>
 
-    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
       <p class="mb-0">&copy; 2026 Bhagwati International — All Rights Reserved</p>
       <div class="footer-legal">
         <a href="#">Payment Terms &amp; Conditions</a>
@@ -437,34 +400,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    // Sync the poster caption strip, index counter, and dots with the active hero slide.
-    document.addEventListener('DOMContentLoaded', function () {
-      var heroCarousel = document.getElementById('heroCarousel');
-      if (heroCarousel) {
-        var items = heroCarousel.querySelectorAll('.carousel-item');
-        var captionEl = document.getElementById('posterCaptionText');
-        var indexEl = document.getElementById('posterIndex');
-        var dots = document.querySelectorAll('#posterDots button');
-
-        function pad(n) { return n < 10 ? '0' + n : '' + n; }
-
-        function syncTo(el) {
-          var idx = Array.prototype.indexOf.call(items, el);
-          if (idx === -1) return;
-          if (captionEl) captionEl.textContent = el.getAttribute('data-caption') || '';
-          if (indexEl) indexEl.textContent = pad(idx + 1) + ' / ' + pad(items.length);
-          dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
-        }
-
-        heroCarousel.addEventListener('slide.bs.carousel', function (e) {
-          syncTo(e.relatedTarget);
-        });
-
-        var activeItem = heroCarousel.querySelector('.carousel-item.active');
-        if (activeItem) syncTo(activeItem);
-      }
-    });
-
     // Lightweight scroll-reveal, respects main.js if it already handles counters/navbar.
     document.addEventListener('DOMContentLoaded', function () {
       if ('IntersectionObserver' in window) {
