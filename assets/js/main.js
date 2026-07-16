@@ -1,5 +1,111 @@
 document.addEventListener('DOMContentLoaded', function() {
   
+  // === MOBILE OFF-CANVAS SIDEBAR MENU ===
+  (function initMobileSidebar() {
+    // Only setup if we have a navbar toggler (below lg breakpoint)
+    const toggler = document.querySelector('.navbar-toggler');
+    if (!toggler) return;
+
+    // Replace the Bootstrap toggler icon with custom hamburger
+    toggler.innerHTML = '<div class="hamburger-icon"><span></span><span></span><span></span></div>';
+    
+    // Remove Bootstrap's data attributes to prevent default collapse behavior
+    toggler.removeAttribute('data-bs-toggle');
+    toggler.removeAttribute('data-bs-target');
+
+    // Build the mobile drawer from the existing nav links
+    const navLinks = document.querySelectorAll('#mainNavbar .nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    // Icon map for nav links
+    const iconMap = {
+      'Home': 'fas fa-home',
+      'About Us': 'fas fa-info-circle',
+      'Services': 'fas fa-shipping-fast',
+      'Prohibited Items': 'fas fa-ban',
+      'Pickup Request': 'fas fa-box',
+      'Contact Us': 'fas fa-envelope'
+    };
+
+    let linksHtml = '';
+    navLinks.forEach(link => {
+      const text = link.textContent.trim();
+      const href = link.getAttribute('href');
+      const icon = iconMap[text] || 'fas fa-angle-right';
+      const isActive = href === currentPage || (currentPage === '' && href === 'index.html');
+      linksHtml += `<li><a href="${href}" class="${isActive ? 'active' : ''}"><i class="${icon}"></i>${text}</a></li>`;
+    });
+
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'mobile-nav-overlay';
+    overlay.id = 'mobileNavOverlay';
+    document.body.appendChild(overlay);
+
+    // Create drawer
+    const drawer = document.createElement('div');
+    drawer.className = 'mobile-nav-drawer';
+    drawer.id = 'mobileNavDrawer';
+    drawer.innerHTML = `
+      <div class="mobile-nav-header">
+        <img src="assets/images/Bhagvati_Intl_Logo.png" alt="Bhagwati International Logo">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        ${linksHtml}
+      </ul>
+      <div class="mobile-nav-cta">
+        <a href="pickuprequest.html" class="btn btn-primary">
+          <i class="fas fa-box me-2"></i>Book Pickup
+        </a>
+      </div>
+      <div class="mobile-nav-contact">
+        <a href="tel:+919727533302"><i class="fas fa-phone-alt"></i>+91 97275 33302</a>
+        <a href="mailto:support@bhagwatiintl.com"><i class="fas fa-envelope"></i>support@bhagwatiintl.com</a>
+      </div>
+    `;
+    document.body.appendChild(drawer);
+
+    // Open handler
+    function openDrawer() {
+      drawer.classList.add('open');
+      overlay.classList.add('active');
+      document.body.classList.add('nav-open');
+    }
+
+    // Close handler
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      overlay.classList.remove('active');
+      document.body.classList.remove('nav-open');
+    }
+
+    toggler.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openDrawer();
+    });
+
+    document.getElementById('mobileNavClose').addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && drawer.classList.contains('open')) {
+        closeDrawer();
+      }
+    });
+
+    // Close drawer on window resize to desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 1025 && drawer.classList.contains('open')) {
+        closeDrawer();
+      }
+    });
+  })();
+
   // 1. Sticky Header Glassmorphism scroll effect
   const mainNav = document.querySelector('.main-nav');
   if (mainNav) {
@@ -11,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
 
   // 2. Animated Counter for Stats
   const statNumbers = document.querySelectorAll('.stat-number');
