@@ -627,7 +627,7 @@ a { text-decoration: none; transition: var(--transition-smooth); }
 }
 
 .service-title { font-size: 1.22rem; font-weight: 600; margin-bottom: 12px; }
-.service-desc { font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 20px; }
+.service-desc { font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .service-card a { font-family: var(--font-display); font-weight: 600; }
 
 /* ==========================================================
@@ -1582,4 +1582,45 @@ body.nav-open {
 
   .cta-ribbon { padding: 18px 14px; }
   .cta-ribbon-text h3 { font-size: 1rem; }
+}
+
+/* ==========================================================
+   Process Cards & Services Grid Hover Effect
+   ========================================================== */
+.process-row .card,
+.process-grid .card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent !important;
+  cursor: pointer;
+}
+
+.process-row .card:hover,
+.process-grid .card:hover {
+  background-color: #ffffff !important;
+  border-color: #dee2e6 !important;
+  box-shadow: var(--shadow-md) !important;
+  transform: translateY(-5px);
+}
+
+.process-row .card .rounded-circle,
+.process-grid .card .rounded-circle {
+  transition: all 0.3s ease;
+}
+
+.process-row .card:hover .rounded-circle,
+.process-grid .card:hover .rounded-circle {
+  background-color: #2b3990 !important;
+  color: #ffffff !important;
+}
+
+.process-row .card .fa-play-circle,
+.process-grid .card .fa-play-circle {
+  transition: all 0.3s ease;
+}
+
+.process-row .card:hover .fa-play-circle,
+.process-grid .card:hover .fa-play-circle {
+  color: #2b3990 !important;
+  transform: rotate(-90deg);
+  opacity: 1 !important;
 }
