@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pickup Request - Bhagwati International</title>
-  <meta name="description" content="Schedule a cargo or parcel pickup from your home or office in Surat. Complete our pickup form and confirm booking slots instantly on WhatsApp.">
+  <meta name="description"
+    content="Schedule a cargo or parcel pickup from your home or office in Surat. Complete our pickup form and confirm booking slots instantly on WhatsApp.">
   <link rel="shortcut icon" href="assets/images/bhagvatifavion.png" type="image/x-icon">
-  
+
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- 1. Header Top Info Bar -->
@@ -24,14 +27,16 @@
           <a href="https://www.bhagwatiintl.in" class="me-3"><i class="fab fa-google-plus-g"></i></a>
         </div>
         <div class="contact-info d-none d-md-block">
-          <span class="me-4"><i class="fas fa-phone-alt me-2"></i><a href="tel:+919727533302">+91 97275 33302</a> / <a href="tel:+919727666799">+91 97276 66799</a></span>
-          <span><i class="fas fa-envelope me-2"></i><a href="mailto:support@bhagwatiintl.com">support@bhagwatiintl.com</a></span>
+          <span class="me-4"><i class="fas fa-phone-alt me-2"></i><a href="tel:+919727533302">+91 97275 33302</a> / <a
+              href="tel:+919727666799">+91 97276 66799</a></span>
+          <span><i class="fas fa-envelope me-2"></i><a
+              href="mailto:support@bhagwatiintl.com">support@bhagwatiintl.com</a></span>
         </div>
       </div>
     </div>
   </div>
 
-   <!-- 2. Sticky Navbar -->
+  <!-- 2. Sticky Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light main-nav sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -62,7 +67,8 @@
   </nav>
 
   <!-- Page Banner Section -->
-  <section class="position-relative bg-dark text-white py-5" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.bhagwatiintl.in/assets/images/slider/aircraft-723888_960_720.jpg'); background-size: cover; background-position: center; height: 260px;">
+  <section class="position-relative bg-dark text-white py-5"
+    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.bhagwatiintl.in/assets/images/slider/aircraft-723888_960_720.jpg'); background-size: cover; background-position: center; height: 260px;">
     <div class="container h-100 d-flex align-items-center">
       <div>
         <span class="badge bg-primary px-3 py-2 text-uppercase mb-2">Book Courier</span>
@@ -75,53 +81,66 @@
   <section class="section-padding">
     <div class="container">
       <div class="row g-4">
-        
+
         <!-- Left Column: Form -->
         <div class="col-lg-9">
           <div class="pe-lg-4">
-            
+
             <div class="section-title-wrapper mb-4">
               <span class="section-subtitle">Hassle-Free Booking</span>
               <h2 class="section-title">Pickup Scheduling Request</h2>
-              <p class="text-muted mt-3">Ready to ship? Fill out the form details below to alert our distribution agents. Once submitted, we will draft a WhatsApp receipt. Confirm your convenient scheduling time directly on WhatsApp chat.</p>
+              <p class="text-muted mt-3">Ready to ship? Fill out the form details below to alert our distribution
+                agents. Once submitted, we will draft a WhatsApp receipt. Confirm your convenient scheduling time
+                directly on WhatsApp chat.</p>
             </div>
 
             <!-- Form Card -->
             <div class="card border p-4 shadow-sm">
               <form id="pickup-form" class="row g-3">
-                
+
                 <div class="col-md-6">
-                  <label for="pickup-name" class="form-label font-weight-bold">Requester Name <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control py-2 border-2" id="pickup-name" required placeholder="Enter full name">
+                  <label for="pickup-name" class="form-label font-weight-bold">Requester Name <span
+                      class="text-danger">*</span></label>
+                  <input type="text" class="form-control py-2 border-2" id="pickup-name" required
+                    placeholder="Enter full name">
                 </div>
 
                 <div class="col-md-6">
-                  <label for="pickup-mobile" class="form-label font-weight-bold">Requester Mobile No <span class="text-danger">*</span></label>
-                  <input type="tel" class="form-control py-2 border-2" id="pickup-mobile" required placeholder="Enter mobile number">
+                  <label for="pickup-mobile" class="form-label font-weight-bold">Requester Mobile No <span
+                      class="text-danger">*</span></label>
+                  <input type="tel" class="form-control py-2 border-2" id="pickup-mobile" required
+                    placeholder="Enter mobile number">
                 </div>
 
                 <div class="col-md-6">
-                  <label for="pickup-city" class="form-label font-weight-bold">Pickup City <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control py-2 border-2" id="pickup-city" required placeholder="e.g. Surat, Bardoli, Vyara">
+                  <label for="pickup-city" class="form-label font-weight-bold">Pickup City <span
+                      class="text-danger">*</span></label>
+                  <input type="text" class="form-control py-2 border-2" id="pickup-city" required
+                    placeholder="e.g. Surat, Bardoli, Vyara">
                 </div>
 
                 <div class="col-md-6">
                   <label for="pickup-weight" class="form-label font-weight-bold">Estimated Package Weight (kg)</label>
-                  <input type="number" class="form-control py-2 border-2" id="pickup-weight" min="0.1" step="0.1" placeholder="e.g. 5.5">
+                  <input type="number" class="form-control py-2 border-2" id="pickup-weight" min="0.1" step="0.1"
+                    placeholder="e.g. 5.5">
                 </div>
 
                 <div class="col-12">
-                  <label for="pickup-address" class="form-label font-weight-bold">Pickup Address & Landmarks <span class="text-danger">*</span></label>
-                  <textarea class="form-control py-2 border-2" id="pickup-address" rows="3" required placeholder="Enter complete home or office address"></textarea>
+                  <label for="pickup-address" class="form-label font-weight-bold">Pickup Address & Landmarks <span
+                      class="text-danger">*</span></label>
+                  <textarea class="form-control py-2 border-2" id="pickup-address" rows="3" required
+                    placeholder="Enter complete home or office address"></textarea>
                 </div>
 
                 <div class="col-12">
                   <label for="pickup-email" class="form-label font-weight-bold">Requester E-Mail</label>
-                  <input type="email" class="form-control py-2 border-2" id="pickup-email" placeholder="Enter your email (optional)">
+                  <input type="email" class="form-control py-2 border-2" id="pickup-email"
+                    placeholder="Enter your email (optional)">
                 </div>
 
                 <div class="col-12 mt-4 text-end">
-                  <button type="submit" class="btn btn-primary btn-lg px-5"><i class="fab fa-whatsapp me-2"></i> Submit & Send Request</button>
+                  <button type="submit" class="btn btn-primary btn-lg px-5"><i class="fab fa-whatsapp me-2"></i> Submit
+                    & Send Request</button>
                 </div>
 
               </form>
@@ -129,10 +148,10 @@
 
           </div>
         </div>
-        
+
         <!-- Right Column: Sidebars -->
         <div class="col-lg-3">
-          
+
           <!-- Widget: Tracker -->
           <div class="widget-card">
             <h4 class="widget-title">Quick Tracking</h4>
@@ -143,7 +162,7 @@
               <button type="submit" class="btn btn-primary w-100">Track Parcel</button>
             </form>
           </div>
-          
+
           <!-- Widget: Fuel Surcharge -->
           <div class="widget-card">
             <h4 class="widget-title">Fuel Surcharge</h4>
@@ -157,22 +176,23 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
   </section>
 
   <!-- Floating WhatsApp Widget -->
-  <a href="https://api.whatsapp.com/send?phone=919727533302&text=Hello%20Bhagwati%20International,%20I%20have%20an%20inquiry%20regarding%20shipping%20rates." class="whatsapp-floating" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=919727533302&text=Hello%20Bhagwati%20International,%20I%20have%20an%20inquiry%20regarding%20shipping%20rates."
+    class="whatsapp-floating" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-        <!-- Ready-to-ship CTA ribbon overlapping footer edge -->
+  <!-- Ready-to-ship CTA ribbon overlapping footer edge -->
   <div class="footer-cta-banner">
     <div class="container position-relative">
       <div class="cta-ribbon position-relative">
-        
+
         <!-- Diagonal Pattern on the left -->
         <div class="cta-pattern-left" aria-hidden="true"></div>
 
@@ -182,17 +202,21 @@
         </div>
 
         <div class="row align-items-center w-100 m-0 position-relative z-2">
-          
+
           <!-- Center Text (pushed right) -->
           <div class="col-lg-8 col-md-12 text-center text-lg-start py-5 cta-text-col">
             <div class="cta-text-content">
-              <h3 class="fw-bold mb-0 text-white lh-base" style="font-size: 2.2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.1);">Ready to ship? <br>Get started with AICS now!</h3>
+              <h3 class="fw-bold mb-0 text-white lh-base"
+                style="font-size: 2.2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.1);">Ready to ship? <br>Get started with
+                AICS now!</h3>
             </div>
           </div>
 
           <!-- Right Buttons -->
           <div class="col-lg-4 col-md-12 text-center text-lg-end py-4 py-lg-5 pe-lg-5">
-            <a href="pickuprequest.html" class="btn bg-white fw-bold py-3 px-4 rounded-3 d-inline-flex align-items-center justify-content-center cta-btn-hover" style="color: #222; box-shadow: 0 4px 15px rgba(0,0,0,0.15); white-space: nowrap;">
+            <a href="pickuprequest.html"
+              class="btn bg-white fw-bold py-3 px-4 rounded-3 d-inline-flex align-items-center justify-content-center cta-btn-hover"
+              style="color: #222; box-shadow: 0 4px 15px rgba(0,0,0,0.15); white-space: nowrap;">
               Get Instant Quote <i class="fas fa-plane-departure ms-2"></i>
             </a>
           </div>
@@ -202,7 +226,7 @@
     </div>
   </div>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer>
     <div class="footer-top-accent" aria-hidden="true"></div>
     <div class="container position-relative">
@@ -285,8 +309,8 @@
           <a href="#">Payment Terms &amp; Conditions</a>
           <span>|</span>
           <a href="#">Privacy Policy</a>
-          <span>|</span>
-          <a href="#">Avoid Fraud &amp; Scams</a>
+          <!-- <span>|</span>
+          <a href="#">Avoid Fraud &amp; Scams</a> -->
         </div>
       </div>
     </div>
@@ -296,5 +320,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>
