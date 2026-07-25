@@ -4365,3 +4365,62 @@ body,
 html {
   overflow-x: hidden;
 }
+
+.terms-content-section {
+      padding: 80px 0;
+      background: #f8fafc;
+    }
+    .terms-card {
+      background: #fff;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    }
+    .terms-card h3 {
+      font-family: var(--font-display);
+      color: var(--color-ink);
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .terms-card h3:first-child {
+      margin-top: 0;
+    }
+    .terms-card p, .terms-card li {
+      color: #475569;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+    .terms-card ul {
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+    .policy-hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .policy-hero-badge {
+      display: inline-block;
+      background-color: #ef4444;
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .policy-hero-section h1 {
+      font-family: var(--font-display);
+      color: #ffffff;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
